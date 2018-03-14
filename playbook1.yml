@@ -1,0 +1,17 @@
+---
+
+-name: uninstalling apache2
+ hosts: 192.168.60.2
+ tasks: 
+  -name: apache2
+   apt:
+    name: apache2
+    state: absent
+-name: installing git
+ hosts: 192.168.60.3
+ tasks:
+  -name: git
+   apt:
+    name: git
+    state: present
+...
